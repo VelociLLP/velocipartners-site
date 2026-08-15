@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veloci Partners — Accounting &amp; Advisory for Growing Businesses</title>
+<meta name="description" content="Veloci Partners delivers outsourced accounting, month-end close, financial reporting and CFO-level advisory for growing businesses. Clean books, clear numbers, better decisions.">
+<meta property="og:title" content="Veloci Partners — Accounting &amp; Advisory">
+<meta property="og:description" content="Outsourced accounting, financial reporting and CFO-level advisory for growing businesses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.velocipartners.com/">
+<meta name="theme-color" content="#0A1F33">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A1F33'/><text x='50' y='70' font-size='58' font-family='Georgia,serif' fill='%23C8A951' text-anchor='middle'>V</text></svg>">
+
+<style>
+:root{
+  --ink:#0A1F33;
+  --ink-2:#12324F;
+  --gold:#C8A951;
+  --gold-soft:#E4D3A3;
+  --paper:#FBFAF7;
+  --paper-2:#F2F0EA;
+  --line:#E2DFD6;
+  --body:#42505C;
+  --white:#fff;
+  --max:1160px;
+  --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  color:var(--body);background:var(--paper);
+  font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{color:var(--ink);line-height:1.15;font-weight:600;letter-spacing:-.01em}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;letter-spacing:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+.eyebrow{
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  font-weight:600;color:var(--gold);margin-bottom:16px;
+}
+.eyebrow.on-dark{color:var(--gold-soft)}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:14px 26px;border-radius:999px;font-weight:600;font-size:15px;
+  transition:.25s ease;border:1.5px solid transparent;cursor:pointer;
+  font-family:inherit;
+}
+.btn-primary{background:var(--gold);color:var(--ink)}
+.btn-primary:hover{background:#b8973f;transform:translateY(-2px);box-shadow:0 10px 24px rgba(200,169,81,.35)}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--ink-2);transform:translateY(-2px)}
+
+/* ---------- Nav ---------- */
+header{
+  position:sticky;top:0;z-index:100;background:rgba(10,31,51,.92);
+  backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.08);
+}
+nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:11px;color:#fff}
+.logo-mark{
+  width:36px;height:36px;border-radius:9px;background:var(--gold);
+  display:grid;place-items:center;color:var(--ink);
+  font-family:'Instrument Serif',serif;font-size:23px;line-height:1;padding-bottom:3px;
+}
+.logo-text{font-weight:600;font-size:16px;letter-spacing:.08em;text-transform:uppercase}
+.logo-text span{color:var(--gold);font-weight:400}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{color:rgba(255,255,255,.82);font-size:15px;font-weight:500;transition:.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{padding:11px 22px;font-size:14px}
+.burger{display:none;background:none;border:0;color:#fff;font-size:26px;cursor:pointer;line-height:1}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:
+    radial-gradient(1000px 520px at 78% -10%, rgba(200,169,81,.20), transparent 60%),
+    linear-gradient(165deg,#0A1F33 0%,#0d2843 55%,#123B5E 100%),
+    var(--ink);
+  color:#fff;padding:96px 0 0;position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:1px;background:rgba(255,255,255,.1);
+}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;padding-bottom:96px}
+.hero h1{color:#fff;font-size:clamp(40px,5.4vw,66px);margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p.lede{font-size:19px;color:rgba(255,255,255,.78);max-width:520px;margin-bottom:34px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
+.hero-trust{
+  display:flex;flex-wrap:wrap;gap:12px 26px;padding-top:26px;
+  border-top:1px solid rgba(255,255,255,.14);
+}
+.hero-trust div{display:flex;align-items:center;gap:9px;font-size:14px;color:rgba(255,255,255,.72)}
+.tick{color:var(--gold);font-weight:700}
+
+/* Hero visual: mini dashboard card */
+.dash{
+  background:linear-gradient(180deg,rgba(255,255,255,.09),rgba(255,255,255,.04));
+  border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:26px;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);backdrop-filter:blur(6px);
+}
+.dash-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:22px}
+.dash-head h4{color:#fff;font-size:15px;font-weight:600}
+.dash-head span{font-size:12px;color:rgba(255,255,255,.5)}
+.dash-row{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:13px 0;border-bottom:1px dashed rgba(255,255,255,.13);font-size:14.5px;
+  color:rgba(255,255,255,.78);
+}
+.dash-row:last-of-type{border-bottom:0}
+.dash-row b{color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+.dash-row.total{margin-top:8px;padding-top:16px;border-top:1px solid rgba(255,255,255,.25);border-bottom:0}
+.dash-row.total b{color:var(--gold);font-size:19px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:74px;margin:22px 0 4px}
+.bars i{flex:1;background:rgba(255,255,255,.16);border-radius:4px 4px 0 0;display:block}
+.bars i.hi{background:var(--gold)}
+
+/* ---------- Sections ---------- */
+section{padding:104px 0}
+.section-head{max-width:660px;margin-bottom:56px}
+.section-head h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:16px}
+.section-head p{font-size:18px}
+.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* Services */
+.services{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:32px 28px;transition:.28s ease;position:relative;overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--gold);transform:scaleX(0);transform-origin:left;transition:.28s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(10,31,51,.09);background:#fff;border-color:#d6d2c6}
+.card:hover::before{transform:scaleX(1)}
+.card .ico{
+  width:46px;height:46px;border-radius:11px;background:rgba(200,169,81,.15);
+  display:grid;place-items:center;margin-bottom:20px;
+}
+.card .ico svg{width:23px;height:23px;stroke:var(--ink);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{font-size:15.5px;line-height:1.6}
+
+/* Value / stats band */
+.band{background:var(--ink);color:#fff}
+.band h2{color:#fff}
+.band .section-head p{color:rgba(255,255,255,.75)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.stat{border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:30px 26px;background:rgba(255,255,255,.04)}
+.stat h3{color:var(--gold);font-size:17px;margin-bottom:10px}
+.stat p{color:rgba(255,255,255,.75);font-size:15.5px}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:s}
+.step{position:relative;padding-top:30px}
+.step::before{
+  counter-increment:s;content:"0" counter(s);
+  font-family:'Instrument Serif',serif;font-size:44px;color:var(--gold);
+  position:absolute;top:-12px;left:0;opacity:.55;
+}
+.step::after{
+  content:"";position:absolute;top:22px;left:0;right:0;height:1px;background:var(--line);z-index:-1;
+}
+.step h3{font-size:18px;margin:14px 0 8px}
+.step p{font-size:15.5px}
+
+/* Industries */
+.pills{display:flex;flex-wrap:wrap;gap:12px}
+.pill{
+  border:1px solid var(--line);background:#fff;border-radius:999px;
+  padding:11px 22px;font-size:15px;font-weight:500;color:var(--ink);
+}
+
+/* Quote */
+.quote{background:var(--paper-2)}
+.quote blockquote{
+  max-width:820px;margin:0 auto;text-align:center;
+  font-family:'Instrument Serif',serif;font-size:clamp(24px,3vw,34px);
+  line-height:1.35;color:var(--ink);
+}
+.quote cite{display:block;margin-top:26px;font-family:'Inter',sans-serif;font-size:15px;font-style:normal;color:var(--body)}
+
+/* Contact */
+.contact{background:var(--white);border-top:1px solid var(--line)}
+.contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:start}
+.contact-info h2{font-size:clamp(30px,3.6vw,44px);margin-bottom:16px}
+.contact-info .detail{display:flex;gap:14px;margin-top:26px;align-items:flex-start}
+.contact-info .detail .k{font-weight:600;color:var(--ink);min-width:78px;font-size:15px}
+form{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:34px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:10px;
+  font-family:inherit;font-size:15.5px;color:var(--ink);background:#fff;transition:.2s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(200,169,81,.18);
+}
+.field textarea{resize:vertical;min-height:110px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .btn{width:100%;justify-content:center;margin-top:6px}
+.form-note{font-size:13px;color:#7b8794;margin-top:14px;text-align:center}
+
+/* Footer */
+footer{background:var(--ink);color:rgba(255,255,255,.62);padding:64px 0 28px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer h4{color:#fff;font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+footer a:hover{color:var(--gold)}
+footer ul{list-style:none}
+footer li{margin-bottom:10px}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13.5px}
+
+/* Reveal animation */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr;gap:44px;padding-bottom:72px}
+  .card-grid,.stat-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr;gap:36px 26px}
+  .contact-grid{grid-template-columns:1fr;gap:40px}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  section{padding:72px 0}
+  .hero{padding-top:64px}
+  .nav-links{
+    display:none;position:absolute;top:74px;left:0;right:0;background:var(--ink);
+    flex-direction:column;align-items:stretch;gap:0;padding:12px 20px 22px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav-links .btn{margin-top:14px;justify-content:center}
+  .burger{display:block}
+  .card-grid,.stat-grid,.steps,.two,.foot-grid{grid-template-columns:1fr}
+  .step::after{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo" aria-label="Veloci Partners home">
+        <span class="logo-mark">V</span>
+        <span class="logo-text">Veloci <span>Partners</span></span>
+      </a>
+      <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#why">Why Veloci</a>
+        <a href="#process">How It Works</a>
+        <a href="#industries">Who We Serve</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Book a Consultation</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow on-dark">Accounting &amp; Advisory</p>
+        <h1>Clean books.<br>Clear numbers.<br><em>Faster decisions.</em></h1>
+        <p class="lede">Veloci Partners handles your bookkeeping, month-end close and financial reporting — then sits down with you to turn those numbers into decisions that grow the business.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a free consultation →</a>
+          <a href="#services" class="btn btn-ghost">See our services</a>
+        </div>
+        <div class="hero-trust">
+          <div><span class="tick">✓</span> Monthly close, on schedule</div>
+          <div><span class="tick">✓</span> Reports you can actually read</div>
+          <div><span class="tick">✓</span> Fixed monthly fees</div>
+        </div>
+      </div>
+
+      <!-- Decorative report card. Illustrative figures only. -->
+      <div class="dash" aria-hidden="true">
+        <div class="dash-head">
+          <h4>Monthly Financial Summary</h4>
+          <span>Sample</span>
+        </div>
+        <div class="bars">
+          <i style="height:38%"></i><i style="height:52%"></i><i style="height:45%"></i>
+          <i style="height:66%"></i><i style="height:58%"></i><i style="height:78%"></i>
+          <i class="hi" style="height:92%"></i>
+        </div>
+        <div class="dash-row"><span>Revenue</span><b>$482,400</b></div>
+        <div class="dash-row"><span>Cost of sales</span><b>$196,100</b></div>
+        <div class="dash-row"><span>Gross profit</span><b>$286,300</b></div>
+        <div class="dash-row"><span>Operating expenses</span><b>$171,800</b></div>
+        <div class="dash-row total"><span>Net profit</span><b>$114,500</b></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What We Do</p>
+      <h2>Everything behind your numbers, handled</h2>
+      <p>One team for the day-to-day bookkeeping and the big-picture advice — so nothing falls between your bookkeeper and your accountant.</p>
+    </div>
+
+    <div class="card-grid">
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg></div>
+        <h3>Bookkeeping &amp; Reconciliation</h3>
+        <p>Transactions categorised, bank and card accounts reconciled, and a clean general ledger you can rely on every single month.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M3 20V10M9 20V4M15 20v-8M21 20V7"/></svg></div>
+        <h3>Financial Statements</h3>
+        <p>Profit &amp; loss, balance sheet and cash flow prepared to standard — with plain-English commentary on what actually moved.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v18M8 7h8M6 12h12M8 17h8"/></svg></div>
+        <h3>Month-End Close</h3>
+        <p>Accruals, prepayments, depreciation and journals posted on a fixed calendar, so your books close on time without the scramble.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M20 7H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1Z"/><path d="M16 7V5a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v2"/></svg></div>
+        <h3>Payroll &amp; Compliance</h3>
+        <p>Payroll processed, filings tracked and deadlines met — with a clear record behind every submission if anyone ever asks.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0-9-9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>CFO &amp; Growth Advisory</h3>
+        <p>Budgets, forecasts, pricing and cash runway. Senior financial thinking on tap, without the cost of a full-time hire.</p>
+      </div>
+      <div class="card reveal">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 17V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10"/><path d="M2 17h20v2H2z"/><path d="M9 9l2.5 2.5L16 7"/></svg></div>
+        <h3>Systems &amp; Automation</h3>
+        <p>The right accounting stack, set up properly and connected — so data flows in cleanly instead of being retyped every month.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="band" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow on-dark">Why Veloci</p>
+      <h2>Most firms send you a file. We send you a decision.</h2>
+      <p>Accurate books are the minimum. The value is in what the numbers tell you to do next.</p>
+    </div>
+    <div class="stat-grid">
+      <div class="stat reveal">
+        <h3>A fixed monthly rhythm</h3>
+        <p>You know exactly which day your close finishes and which day your reports land. No chasing, no surprises at year end.</p>
+      </div>
+      <div class="stat reveal">
+        <h3>Reports built for owners</h3>
+        <p>Every statement comes with a short summary: what changed, why it changed, and what deserves your attention this month.</p>
+      </div>
+      <div class="stat reveal">
+        <h3>One team, both jobs</h3>
+        <p>The people doing your bookkeeping are the people advising you. Nothing gets lost in a handover between two firms.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">How It Works</p>
+      <h2>Getting started takes a week, not a quarter</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal">
+        <h3>Discovery call</h3>
+        <p>A short conversation about your business, your current setup and where the numbers are causing you pain.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Books review</h3>
+        <p>We look at your existing records, flag what needs cleaning up, and quote you a fixed monthly fee.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Onboarding</h3>
+        <p>Accounts connected, chart of accounts tidied, prior periods brought current and a close calendar agreed.</p>
+      </div>
+      <div class="step reveal">
+        <h3>Monthly cycle</h3>
+        <p>Close, statements and a summary every month — plus a review call whenever you want to talk through the numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section id="industries" style="background:var(--white);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Who We Serve</p>
+      <h2>Built for owner-led businesses</h2>
+      <p>We work best with companies past the start-up stage that have outgrown spreadsheets but don't yet need a finance department.</p>
+    </div>
+    <div class="pills reveal">
+      <span class="pill">Professional services</span>
+      <span class="pill">Construction &amp; trades</span>
+      <span class="pill">E-commerce &amp; retail</span>
+      <span class="pill">Healthcare practices</span>
+      <span class="pill">Real estate &amp; property</span>
+      <span class="pill">Logistics</span>
+      <span class="pill">Agencies &amp; consultancies</span>
+      <span class="pill">Hospitality</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUOTE =================
+     REPLACE with a real client quote before launch, or delete this whole section.
+-->
+<section class="quote">
+  <div class="wrap">
+    <blockquote class="reveal">
+      “Good accounting isn't about looking backwards. It's about knowing, early enough to act, which way the business is heading.”
+      <cite>— Veloci Partners</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Get In Touch</p>
+        <h2>Let's look at your numbers together</h2>
+        <p>Tell us a little about your business and we'll come back within one business day with next steps. Consultations are free and there's no obligation.</p>
+
+        <div class="detail"><span class="k">Email</span><a href="mailto:hello@velocipartners.com">hello@velocipartners.com</a></div>
+        <div class="detail"><span class="k">Phone</span><span>Add your number</span></div>
+        <div class="detail"><span class="k">Hours</span><span>Monday – Friday, 9:00am – 5:00pm</span></div>
+      </div>
+
+      <!-- ┌──────────────────────────────────────────────────────────────┐
+           │ ACTION REQUIRED: replace YOUR_FORM_ID below.                 │
+           │ 1. Sign up free at https://formspree.io                      │
+           │ 2. New Form → set the recipient email → copy the form ID     │
+           │ 3. Paste it in place of YOUR_FORM_ID                         │
+           │ Formspree works on GitHub Pages, Netlify, Cloudflare — any   │
+           │ static host. Until you do this, the form will not send.      │
+           └──────────────────────────────────────────────────────────────┘ -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="reveal">
+        <p style="display:none"><label>Leave blank: <input name="_gotcha"></label></p>
+        <input type="hidden" name="_subject" value="New enquiry from velocipartners.com">
+
+        <div class="two">
+          <div class="field">
+            <label for="name">Your name*</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text">
+          </div>
+        </div>
+        <div class="two">
+          <div class="field">
+            <label for="email">Email*</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service">
+            <option>Bookkeeping &amp; reconciliation</option>
+            <option>Financial statements &amp; reporting</option>
+            <option>Month-end close</option>
+            <option>Payroll &amp; compliance</option>
+            <option>CFO &amp; growth advisory</option>
+            <option>Not sure yet — let's talk</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tell us about your business</label>
+          <textarea id="message" name="message" placeholder="Industry, roughly how many transactions a month, what system you use now…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send enquiry</button>
+        <p class="form-note">We reply within one business day. Your details stay confidential.<br>Prefer email? <a href="mailto:hello@velocipartners.com" style="color:var(--ink);text-decoration:underline">hello@velocipartners.com</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a href="#top" class="logo" style="margin-bottom:16px">
+          <span class="logo-mark">V</span>
+          <span class="logo-text">Veloci <span>Partners</span></span>
+        </a>
+        <p style="max-width:340px">Accounting and advisory for owner-led businesses. Clean books, clear reporting and the advice to act on them.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Bookkeeping</a></li>
+          <li><a href="#services">Financial statements</a></li>
+          <li><a href="#services">Month-end close</a></li>
+          <li><a href="#services">Payroll</a></li>
+          <li><a href="#services">CFO advisory</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#why">Why Veloci</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#industries">Who we serve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> Veloci Partners. All rights reserved.</span>
+      <span>velocipartners.com</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  var burger = document.getElementById('burger');
+  var links  = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+    burger.textContent = open ? '✕' : '☰';
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      burger.textContent = '☰';
+    });
+  });
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el, i){
+    el.style.transitionDelay = (i % 3) * 80 + 'ms';
+    io.observe(el);
+  });
+</script>
+</body>
+</html>
